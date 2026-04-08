@@ -1,0 +1,11 @@
+name: Fail Test
+
+on: push
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Wrong Command
+        run: abcxyz
